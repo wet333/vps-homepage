@@ -4,7 +4,6 @@ services:
   nginx:
     image: nginx:stable-alpine
     ports:
-      # - 9000:80   # Use in development
-      - 80:80   # Use in production
+      - 9000:80   # Use in development
     volumes:
       - ./website:/usr/share/nginx/html
