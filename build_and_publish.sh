@@ -2,7 +2,7 @@
 
 # Define variables
 DOCKER_IMAGE="vps-homepage"
-TAG="1.0.0"
+TAG="1.0.1"
 REPOSITORY="wetagustin/vps-homepage"
 
 # Build the Docker image
