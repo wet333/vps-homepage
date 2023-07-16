@@ -2,17 +2,22 @@
 
 # Define variables
 DOCKER_IMAGE="vps-homepage"
-TAG="1.0.2"
+VERSION_TAG="1.0.6"
+LATEST_FLAG=true
 REPOSITORY="wetagustin/vps-homepage"
 
 # Build the Docker image
-docker build -t "${DOCKER_IMAGE}:${TAG}" .
+docker build -t "${DOCKER_IMAGE}:${VERSION_TAG}" .
 
-# Tag the Docker image
-docker tag "${DOCKER_IMAGE}:${TAG}" "${REPOSITORY}:${TAG}"
+# Add the tags
+docker tag "${DOCKER_IMAGE}:${VERSION_TAG}" "${REPOSITORY}:${VERSION_TAG}"
+# Publish the images
+docker push "${REPOSITORY}:${VERSION_TAG}"
 
-# Publish the Docker image
-docker push "${REPOSITORY}:${TAG}"
+if [ "$LATEST_FLAG" = true ]; then
+    docker tag "${DOCKER_IMAGE}:${VERSION_TAG}" "${REPOSITORY}:latest"
+    docker push "${REPOSITORY}:latest"
+fi
 
 # Wait for user input
 read -p "Press any key to exit..."
