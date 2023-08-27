@@ -139,13 +139,21 @@ section {
 	align-items: center;
 }
 
-.tech-stack-list ul {
+.list-3col ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.list-2col ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 @media (min-width: 1200px) {
-	.tech-stack-list ul {
+	.list-3col ul {
 		grid-template-columns: repeat(3, 1fr);
+	}
+    .list-2col ul {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
