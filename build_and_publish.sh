@@ -2,7 +2,7 @@
 
 # Define variables
 DOCKER_IMAGE="vps-homepage"
-VERSION_TAG="1.0.6"
+VERSION_TAG="1.0.8"
 LATEST_FLAG=true
 REPOSITORY="wetagustin/vps-homepage"
 
