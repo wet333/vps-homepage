@@ -1,4 +1,4 @@
-const API_URL = "https://api.agustinwet.online/api/github/my-repositories";
+const API_URL = "https://api.awet.online/api/github/my-repositories";
 const API_URL_DEV = "http://localhost:3000/api/github/my-repositories";
 const demoPagePrefix = "https://wet333.github.io/";
 const repoPagePrefix = "https://github.com/wet333/";
