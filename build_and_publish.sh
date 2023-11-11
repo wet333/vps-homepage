@@ -2,9 +2,13 @@
 
 # Define variables
 DOCKER_IMAGE="vps-homepage"
-VERSION_TAG="1.0.8"
+VERSION_TAG="1.0.9"
 LATEST_FLAG=true
 REPOSITORY="wetagustin/vps-homepage"
+
+# Important!!! - I need this to push to dockerhub, because the terminal
+# opened for executing this script is different that where i started it.
+docker login 
 
 # Build the Docker image
 docker build -t "${DOCKER_IMAGE}:${VERSION_TAG}" .
