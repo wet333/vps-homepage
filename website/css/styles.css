@@ -27,11 +27,12 @@ body {
 	z-index: 1;
 	width: 100%;
 	background: #0000008a;
+	backdrop-filter: blur(0.75px);
 }
 
 header {
 	display: flex;
-	margin: 2rem auto;
+	margin: 1rem auto;
 	width: 75vw;
 	max-width: 800px;
 	flex-direction: column;
@@ -86,6 +87,11 @@ a:hover {
 ul {
 	list-style: disc;
 	list-style-position: inside;
+	padding: 0;
+}
+
+ul > li {
+	padding: 6px 0;
 }
 
 .w-bolder {
@@ -109,7 +115,7 @@ ul {
 /* Specific styles */
 
 section {
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 .section-title {
