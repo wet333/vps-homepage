@@ -121,6 +121,9 @@ section {
 
 .section-title {
 	margin-bottom: 1rem;
+    background: #1e1e1e;
+    padding: 10px 10px;
+    border-radius: 6px;
 }
 .section-title::before {
 	content: "# ";
@@ -180,7 +183,7 @@ section {
 /* Experience styles */
 
 .job-item {
-	padding: 1rem;
+	margin: 16px 6px;
 }
 
 .job-item > h3 {
