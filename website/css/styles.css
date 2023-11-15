@@ -85,7 +85,7 @@ a:hover {
 }
 
 ul {
-	list-style: disc;
+	list-style-type: none;
 	list-style-position: inside;
 	padding: 0;
 }
@@ -167,4 +167,32 @@ section {
     .list-2col ul {
 		grid-template-columns: repeat(2, 1fr);
 	}
+}
+
+/* Skills styles */
+
+.skill-item {
+	display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Experience styles */
+
+.job-item {
+	padding: 1rem;
+}
+
+.job-item > h3 {
+    font-size: 130%;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.job-item > ul > li {
+	list-style-type: circle;
+    list-style-position: inside;
+    padding: 0;
+    margin: 12px 0;
+    line-height: normal;
 }
