@@ -92,6 +92,7 @@ ul {
 
 ul > li {
 	padding: 6px 0;
+	list-style-type: none;
 }
 
 .w-bolder {
@@ -112,7 +113,7 @@ ul > li {
 	padding-left: 0.5rem;
 }
 
-/* Specific styles */
+/* General styles */
 
 section {
 	margin-bottom: 2rem;
@@ -123,16 +124,6 @@ section {
 }
 .section-title::before {
 	content: "# ";
-}
-
-.text-contents {
-	line-height: 1.9rem;
-	color: #afafaf;
-	letter-spacing: 0.125px;
-}
-
-.job-title {
-	margin: 8px 0px;
 }
 
 .contact-item {
@@ -169,6 +160,15 @@ section {
 	}
 }
 
+/* About styles */
+
+.about-me-text {
+    line-height: 1.9rem;
+    color: #8d8d8d;
+    letter-spacing: 0.125px;
+    font-weight: 400;
+}
+
 /* Skills styles */
 
 .skill-item {
@@ -195,4 +195,13 @@ section {
     padding: 0;
     margin: 12px 0;
     line-height: normal;
+    font-weight: 400;
+    color: #8d8d8d;
+}
+
+/* Projects styles */
+
+.projects-subtitle {
+	font-weight: 300;
+    font-size: 105%;
 }

@@ -13,17 +13,18 @@ function getResumeSkills() {
             }
         })
         .then((data) => {
-            renderResume(data.data);
+            renderResumeSkillList(data.data);
         })
 }
 
-function renderResume(data) {
+function renderResumeSkillList(data) {
     const skills = data;
     const skillsList = document.getElementById("skills-list");
 
     const skillsListItems = skills.map((skill) => {
         const { name, icon } = skill;
-        const iconElement = icon ? "<img src='"+icon+"' alt='"+name+"' width='72' height='72' />" : "";
+        const iconSize = 64;
+        const iconElement = icon ? "<img src='" + icon + "' alt='" + name + "' width='" + iconSize + "' height='" + iconSize + "' />" : "";
         return `<li><div class='skill-item' > ${iconElement}${name} </div></li>`;
     });
     
