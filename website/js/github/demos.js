@@ -5,7 +5,7 @@ const repoPagePrefix = "https://github.com/wet333/";
 
 const listElement = document.getElementById("project-list");
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
     fetch(API_URL)
         .then((response) => {
             if (response.ok) {

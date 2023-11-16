@@ -32,7 +32,7 @@ function renderResumeSkillList(data) {
     const skillsListItems = skills.map((skill) => {
         const { name, icon } = skill;
         const iconSize = 64;
-        const iconElement = icon ? "<img src='" + icon + "' alt='" + name + "' width='" + iconSize + "' height='" + iconSize + "' />" : "";
+        const iconElement = icon ? "<img src='" + icon + "' alt='" + name + "_logo' width='" + iconSize + "' height='" + iconSize + "' />" : "";
 
         if (skill.order && skill.order >= 0) {
             return `<li style='order: ${skill.order}'><div class='skill-item' > ${iconElement}${name} </div></li>`;

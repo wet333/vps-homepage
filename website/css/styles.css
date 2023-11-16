@@ -3,14 +3,17 @@
 html {
 	font-size: 16px;
 	font-family: "Open sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
 	position: relative;
-	font-size: 1.1rem;
-	color: #ededed;
-	background: #161616;
-	margin: 0;
+    font-size: 1.1rem;
+    color: #ededed;
+    background: #161616;
+    margin: 0;
+    padding: 0;
 }
 
 #background {
@@ -23,11 +26,13 @@ body {
 }
 
 #page-contents {
-	position: absolute;
-	z-index: 1;
-	width: 100%;
-	background: #0000008a;
-	backdrop-filter: blur(0.75px);
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background: #0000008a;
+    backdrop-filter: blur(0.75px);
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -36,9 +41,6 @@ header {
 	width: 75vw;
 	max-width: 800px;
 	flex-direction: column;
-}
-
-header a {
 	overflow-wrap: anywhere;
 }
 
@@ -57,10 +59,14 @@ header a {
 		font-size: 1.2rem;
 	}
 
+	#page-contents > * {
+		width: auto;
+	}
+
 	header {
 		display: flex;
-		margin: 0;
-		padding: 2rem;
+		padding: 0;
+		margin: 2rem;
 		flex-direction: column;
 	}
 
